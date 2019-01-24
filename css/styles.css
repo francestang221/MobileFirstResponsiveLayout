@@ -1,24 +1,15 @@
-/*for Mobile*/
-
-@media (max-width:767px){
-  .nav li {
-    background-color: white;
-    margin: 10px;
-  }
-
-}
-
 
 * {
   box-sizing: border-box;
 }
-
 
 body {
   background-color: #F9F5F5;
   font-family: 'Roboto', sans-serif;
   margin:0px;
 }
+
+
 
 .name {
   font-size: 60px;
@@ -40,6 +31,14 @@ ul {
   text-align: center;
 }
 
+.button {
+  background-color: white;
+  margin-left: -2.4rem;
+  margin-right: 0rem;
+  margin-top:10px;
+  padding:10px;
+}
+
 
 .nav a:hover {
   color: turquoise;
@@ -57,16 +56,8 @@ main {
   display:block;
 }
 
-#portfolio {
-  padding: 20px;
-}
 
-.nav li {
-  padding: 10px;
-}
-
-
-.intro,
+.nav,
 .profilePhoto {
   display: block;
   margin-left: auto;
@@ -75,22 +66,6 @@ main {
   width: 80%;
 }
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.portfolio-image {
-  display: table;
-  margin:auto;
-  width: 90%;
-}
-
-p {
-  display:block;
-  width:90%;
-  text-align: center;
-}
 
 h2 {
   text-align: center;
@@ -101,6 +76,21 @@ p {
   color: darkgray;
 }
 
+
+/*portfolio*/
+
+#portfolio {
+  padding: 20px;
+}
+
+
+.portfolio-image,
+.project {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
 
 
 
@@ -114,32 +104,41 @@ p {
 
 
 /*for Tablet*/
-@media (min-width: 768px) and (max-width:1023px){
 
-  li {
-    display:inline-block;
-  }
-  .container {
-    width:90%;
-    max-width: 1000px;
-    margin:0,auto;
-  }
+/***tablet navigation menu****/
 
-#intro1 {
-  float: right;
-}
+@media (min-width: 768px) {
 
-#intro2 {
+li {
   display: inline-block;
-  float:left;
-  width:50%;
+  margin: auto;
 }
 
+.button {
+  background-color: #F9F5F5;
+  margin:10px;
+  padding:10px;
+}
 
-  .col {
-    float:left;
-    width:45%
-  }
+/**intro two columns **/
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wrapper > div {
+  flex: 1;
+}
+
+/**portofolio two colums**/
+
+
+.project {
+  float:right;
+  margin:auto;
+  max-width: 50%;
+}
 
 
 }
@@ -152,27 +151,33 @@ p {
     float:left;
   }
 
-  .primary,.secondary,.tertiary {
-    width: 33%
+
+.nav {
+  margin:auto;
+  float:right;
+  width: 40%;
   }
 
-  li {
-    float:left;
-    display:inline-block;
-  }
-
-  .nav {
-    float:right;
-  }
+.button
+{
+  padding:10px;
+  float:left;
+}
 
   #intro1 {
     float: right;
+    width: 50%;
   }
 
   #intro2 {
-    display: inline-block;
     float:left;
     width:50%;
+  }
+
+  .project {
+    float:right;
+    margin:auto;
+    max-width: 33.3%;
   }
 
 }
