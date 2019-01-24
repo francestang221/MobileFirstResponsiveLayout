@@ -53,11 +53,12 @@ a {
 main {
   background-color: white;
   display:block;
+  padding-bottom: 10px;
 }
 
 
 .nav,
-.profilePhoto {
+.profile-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,23 +83,19 @@ p {
   padding: 20px;
 }
 
-
-.portfolio-image,
-.project {
+p,
+.portfolio-image{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:90%;
+  width:92%;
 }
 
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.clearfix {
+  overflow: auto;
 }
-
-
 
 /*for Tablet*/
 
@@ -133,18 +130,16 @@ li {
 
 .project {
   float:right;
-  margin:auto;
   max-width: 50%;
+  display:inline-block;
 }
-
 
 }
 
 /*for Desktop*/
 @media (min-width: 1024px){
 
-  .name,
-  .col {
+  .name {
     float:left;
   }
 
@@ -155,21 +150,10 @@ li {
   width: 40%;
   }
 
-.button
-{
+.button {
   padding:10px;
   float:left;
 }
-
-  #intro1 {
-    float: right;
-    width: 50%;
-  }
-
-  #intro2 {
-    float:left;
-    width:50%;
-  }
 
   .project {
     float:right;
