@@ -114,6 +114,27 @@ p {
   overflow: auto;
 }
 
+
+
+/*footer*/
+
+.bottom-name {
+  float:left;
+}
+
+.backtotop{
+  display:inline-block;
+  float: right;
+  padding-right: 10px;
+  max-width: 50%;
+}
+
+.bottom-nav {
+  display:none;
+}
+
+
+
 /*for Tablet*/
 
 /***tablet navigation menu****/
@@ -150,6 +171,30 @@ li {
   max-width: 50%;
   display:inline-block;
 }
+
+/**bottom navigation bar**/
+
+.backtotop {
+  display:none;
+}
+
+.bottom-nav {
+  float:right;
+  font-family:'Roboto', sans-serif;
+  display:inline-block;
+}
+
+.bottom-nav li {
+  padding:10px;
+}
+
+.bottom-nav li a:hover {
+  color: turquoise;
+}
+
+
+
+
 
 }
 
